@@ -76,13 +76,15 @@ hold.addEventListener(`click`,()=>{
     main.Scores[main.activePlayer] += main.score
     document.getElementById(`Totalscore${main.activePlayer}`).innerText = 
     main.Scores[main.activePlayer];
-    if(main.Scores[main.activePlayer] >= 10){
+    if(main.Scores[main.activePlayer] >= 100){
         let winner = document.getElementById(`player_${main.activePlayer}`)
         winner.classList.add('winner')
         winner.innerHTML = `<h1>Yσυ Wσɳ</h1>`
         roll.classList.add('hidden')
         hold.classList.add('hidden')
         diceEl.classList.add('hidden')
+        restart.classList.add('hidden')
+        winner.innerHTML = `<button class="newbtn" onclick="newgame()">🏁 Start Again</button>`
     }else{
         SwitchPlayer()
         listEl = document.createElement('p')
@@ -96,10 +98,16 @@ hold.addEventListener(`click`,()=>{
 restart.addEventListener(`click`,()=>{
     roll.classList.remove('hidden')
         hold.classList.remove('hidden')
+        winner = document.getElementById(`player_${main.activePlayer}`)
     init()
 })
 
+let newStart = document.getElementsByClassName('newbtn')
 
+function newgame(){
+        location.reload();
+    init()
+}
 
 
 init();

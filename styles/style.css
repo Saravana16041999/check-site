@@ -124,3 +124,14 @@ img{
     margin-top: 20px;
     font-size: 40px;
 }
+.newbtn{
+    position: absolute;
+    left: 38%;
+    top: 40%;
+    padding: 6px 23px 6px 23px;
+    background-color: #3F3B6C;
+    border-style: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
