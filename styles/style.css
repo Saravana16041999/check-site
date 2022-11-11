@@ -42,7 +42,9 @@ heading{
 .player_active{
     background-color: rgba(230, 230, 250, 0.234); 
 }
-
+.winner{
+    background-color: rgba(255, 217, 0, 0.222);
+}
 
 .hidden{
     display: none;
@@ -115,6 +117,10 @@ img{
 
 
 .massage{
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 30px;
+}
+.list{
+    margin-top: 20px;
+    font-size: 40px;
 }
