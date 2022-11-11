@@ -77,7 +77,7 @@ hold.addEventListener(`click`,()=>{
     main.Scores[main.activePlayer] += main.score
     document.getElementById(`Totalscore${main.activePlayer}`).innerText = 
     main.Scores[main.activePlayer];
-    if(main.Scores[main.activePlayer] >= 10){
+    if(main.Scores[main.activePlayer] >= 100){
         let winner = document.getElementById(`player_${main.activePlayer}`)
         winner.classList.add('winner')
         winner.innerHTML = `<h1>Yσυ Wσɳ</h1>`
