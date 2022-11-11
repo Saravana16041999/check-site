@@ -14,7 +14,7 @@ body{
     display: flex;
     position: relative;
     margin-top: 10px;
-    background-color: rgba(230, 230, 250, 0.234);
+    background-color:rgba(0, 0, 0, 0.192);
 }
 heading{
     margin-top: 40px;
@@ -40,7 +40,7 @@ heading{
     align-items: center;
 }
 .player_active{
-    background-color:rgba(0, 0, 0, 0.265);
+    background-color: rgba(230, 230, 250, 0.234); 
 }
 
 
@@ -114,3 +114,7 @@ img{
 }
 
 
+.massage{
+    margin-top: 40px;
+    font-size: 30px;
+}
