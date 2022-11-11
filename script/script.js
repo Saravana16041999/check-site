@@ -12,6 +12,7 @@ const roll = document.getElementById('roll');
 const hold = document.getElementById('hold');
 const diceEl = document.getElementById('dice')
 const massageEl = document.getElementById('massage')
+const mainel = document.getElementById('main')
 
 //globle variables
 const main = {
@@ -76,7 +77,7 @@ hold.addEventListener(`click`,()=>{
     main.Scores[main.activePlayer] += main.score
     document.getElementById(`Totalscore${main.activePlayer}`).innerText = 
     main.Scores[main.activePlayer];
-    if(main.Scores[main.activePlayer] >= 100){
+    if(main.Scores[main.activePlayer] >= 10){
         let winner = document.getElementById(`player_${main.activePlayer}`)
         winner.classList.add('winner')
         winner.innerHTML = `<h1>Yσυ Wσɳ</h1>`
@@ -84,7 +85,7 @@ hold.addEventListener(`click`,()=>{
         hold.classList.add('hidden')
         diceEl.classList.add('hidden')
         restart.classList.add('hidden')
-        winner.innerHTML = `<button class="newbtn" onclick="newgame()">🏁 Start Again</button>`
+        massageEl.innerHTML = `<button class="newbtn" onclick="newgame()">🏁 Start Again</button>`
     }else{
         SwitchPlayer()
         listEl = document.createElement('p')
