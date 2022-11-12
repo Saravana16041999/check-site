@@ -125,11 +125,9 @@ img{
     font-size: 40px;
 }
 .newbtn{
-    position: absolute;
-    left: 45%;
-    top: 26%;
+    margin-top: 10px;
     padding: 6px 23px 6px 23px;
-    background-color: #3F3B6C;
+    background-color: rgba(255, 0, 0, 0.646);
     border-style: none;
     color: white;
     border-radius: 12px;

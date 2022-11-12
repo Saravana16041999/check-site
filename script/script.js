@@ -85,7 +85,14 @@ hold.addEventListener(`click`,()=>{
         hold.classList.add('hidden')
         diceEl.classList.add('hidden')
         restart.classList.add('hidden')
-        massageEl.innerHTML = `<button class="newbtn" onclick="newgame()">🏁 Start Again</button>`
+        if(main.activePlayer === 0){
+            massageEl.innerHTML = `<h1>קɭคץєг เ Yσυ Wσɳ</h1>`
+        }else if (main.activePlayer === 1){
+            massageEl.innerHTML = `<h1>קɭคץєг เเ Yσυ Wσɳ</h1>`
+        }
+        let winEl = document.getElementById('head')
+        winEl.innerHTML = `<button class="newbtn" onclick="newgame()">Start Again</button>`
+        
     }else{
         SwitchPlayer()
         listEl = document.createElement('p')
